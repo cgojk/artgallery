@@ -1,1 +1,159 @@
 @import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@800;900&family=Outfit:wght@300&display=swap');
+
+:root {
+
+
+
+    // =========================================================
+    // colors
+    // ==========================================================
+    --grey-900:hsl(0,0%,8%);
+    --grey-700:hsl(0,0%,27%);
+    --gold-500:hsl(24,56%,63%);
+    --white:hsl(0,0%,100%);
+
+
+
+
+  /* =========================================================
+     FONT FAMILIES
+     ========================================================= */
+
+  --font-family-heading: 'Big Shoulders Display', sans-serif;
+  --font-family-body: 'Outfit', sans-serif;
+
+
+  /* =========================================================
+     TYPOGRAPHY
+     ========================================================= */
+
+  /* ---------------------------------------------------------
+     Text Present 1
+     Desktop: 96px
+     Tablet: 70px
+     Mobile: 60px
+     --------------------------------------------------------- */
+
+  --font-1: 900 96px / 90% var(--font-family-heading);
+  --font-1-letter-spacing: 0;
+
+
+  /* ---------------------------------------------------------
+     Text Present 2
+     Desktop: 70px
+     Tablet: 70px
+     Mobile: 55px
+     --------------------------------------------------------- */
+
+  --font-2: 900 70px / 100% var(--font-family-heading);
+  --font-2-letter-spacing: 0;
+
+
+  /* ---------------------------------------------------------
+     Text Present 3
+     Desktop: 60px
+     Tablet: 50px
+     Mobile: 50px
+     --------------------------------------------------------- */
+
+  --font-3: 900 60px / 100% var(--font-family-heading);
+  --font-3-letter-spacing: 0;
+
+
+  /* ---------------------------------------------------------
+     Text Present 4
+     Desktop: 36px
+     --------------------------------------------------------- */
+
+  --font-4: 900 36px / 100% var(--font-family-heading);
+  --font-4-letter-spacing: 0;
+
+
+  /* ---------------------------------------------------------
+     Text Present 5
+     Outfit Light
+     --------------------------------------------------------- */
+
+  --font-5: 300 22px / 140% var(--font-family-body);
+  --font-5-letter-spacing: 0;
+
+
+  /* ---------------------------------------------------------
+     Text Present 6
+     Big Shoulders Display ExtraBold
+     --------------------------------------------------------- */
+
+  --font-6: 800 20px / 100% var(--font-family-heading);
+  --font-6-letter-spacing: 3.64px;
+
+
+  /* ---------------------------------------------------------
+     Text Present 7
+     Outfit Light
+     --------------------------------------------------------- */
+
+  --font-7: 300 18px / 140% var(--font-family-body);
+  --font-7-letter-spacing: 0;
+
+
+  /* =========================================================
+     SPACING
+     ========================================================= */
+
+  --space-1: 0.25rem;   /* 4px */
+  --space-2: 0.375rem;  /* 6px */
+  --space-3: 0.5rem;    /* 8px */
+  --space-4: 0.625rem;  /* 10px */
+  --space-5: 1rem;      /* 16px */
+  --space-6: 1.25rem;   /* 20px */
+  --space-7: 1.5rem;    /* 24px */
+  --space-8: 1.875rem;  /* 30px */
+  --space-9: 2rem;      /* 32px */
+  --space-10: 2.5rem;   /* 40px */
+  --space-11: 3rem;     /* 48px */
+  --space-12: 3.75rem;  /* 60px */
+  --space-13: 4rem;     /* 64px */
+  --space-14: 4.5rem;   /* 72px */
+  --space-15: 5rem;     /* 80px */
+  --space-16: 6rem;     /* 96px */
+  --space-18: 7rem;     /* 112px */
+  --space-20: 8rem;     /* 128px */
+}
+
+
+/* =========================================================
+   TABLET
+   ========================================================= */
+
+@media (max-width: 1024px) {
+  :root {
+
+    /* Text Present 1 */
+    --font-1: 900 70px / 90% var(--font-family-heading);
+
+    /* Text Present 2 */
+    --font-2: 900 70px / 100% var(--font-family-heading);
+
+    /* Text Present 3 */
+    --font-3: 900 50px / 90% var(--font-family-heading);
+  }
+}
+
+
+/* =========================================================
+   MOBILE
+   ========================================================= */
+
+@media (max-width: 768px) {
+  :root {
+
+    /* Text Present 1 */
+    --font-1: 900 60px / 90% var(--font-family-heading);
+
+    /* Text Present 2 */
+    --font-2: 900 55px / 90% var(--font-family-heading);
+
+    /* Text Present 3 */
+    --font-3: 900 50px / 90% var(--font-family-heading);
+  }
+}
