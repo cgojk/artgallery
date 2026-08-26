@@ -1,0 +1,13 @@
+.hero{
+    background-color:var(--white);
+    .hero__title{
+        font:var(--font-3);
+        letter-spacing: var(--font-3-letter-spacing);
+        color:var(--grey-900);
+    }
+    .hero__description{
+        font:var(--font-5);
+    }
+    
+
+}
