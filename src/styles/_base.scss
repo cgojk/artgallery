@@ -1,21 +1,51 @@
 .hero{
     background-color:var(--white);
+
+    .container__info{
+        display:flex;
+        flex-direction:column;
+       gap:var(--space-9);
+        
+      padding:var(--space-9) var(--space-5);
+    }
     .hero__title{
         font:var(--font-3);
         letter-spacing: var(--font-3-letter-spacing);
         color:var(--grey-900);
+        text-transform:uppercase;
     }
     .hero__description{
-        font:var(--font-5);
+        font:var(--font-7);
+        letter-spacing: var(--font-7-letter-spacing);
     }
-    .hero__button{
+    .button__container{
         font:var(--font-6);
-        background-color:var(--grey-900);
+        letter-spacing: var(--font-6-letter-spacing);
         color:var(--white);
-        border: none;
-        padding: 1rem 2rem;
+        text-transform:uppercase;
+       border: none;
         cursor: pointer;
+        display: flex;
+        // align-items: stretch;
+    
+        flex-direction: row;
+
+        .hero__button-line{
+            background-color: var(--gold-500);;
+             padding:var(--space-7) var(--space-8);
+        }
+        .hero__button{
+            background-color:var(--grey-900);
+             padding:var(--space-7) var(--space-8);
+            color:var(--white);
+        }
+        .hero__button-icon{
+           display:block;
+        }
+
+
     }
+
     
 
 }
