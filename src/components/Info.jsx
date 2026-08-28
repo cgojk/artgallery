@@ -25,7 +25,7 @@ import infoImageDesktop3_2x from "../assets/desktop/image-grid-3@2x.jpg";
 
 export default function Info() {
   return (
-    <section className="info">
+    <section className="info container">
       <div className="container__image--info">
         <div className="image__container">
             <picture>
@@ -82,10 +82,10 @@ export default function Info() {
                 alt="Info Image"
               />
             </picture>
-        <div>
-          <h2 className="info__title--grid">come and be Inspired</h2>
-          <p> We 'are excited to welcome you to our gallery and see how out collecitons influence you.</p>
-          </div>
+           <div className="container__info--grid">
+                <h2 className="info__title--grid">come and be Inspired</h2>
+                <p className="description__info--grid"> We 'are excited to welcome you to our gallery and see how out collecitons influence you.</p>
+            </div>
           </div>
       
     </section>

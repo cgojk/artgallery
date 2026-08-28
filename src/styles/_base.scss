@@ -1,3 +1,8 @@
+.container{
+    max-width:1200px;
+    margin:0 auto;
+}
+
 .hero{
     background-color:var(--white);
 
@@ -48,4 +53,96 @@
 
     
 
+}
+
+// =========================================================
+
+// ===================INFO SECTION==========================
+
+.info{
+        .container__image--info{
+        .image__info{
+           
+            object-fit:cover;
+        }
+  
+    }
+    .container__info{
+        display:flex;
+        flex-direction:column;
+        gap:var(--space-9);
+        padding:var(--space-9) var(--space-5);
+
+        .info__title{
+            font:var(--font-3);
+            letter-spacing: var(--font-3-letter-spacing);
+            color:var(--grey-900);
+            text-transform:uppercase;
+        }
+        .info__description{
+            font:var(--font-7);
+            letter-spacing: var(--font-7-letter-spacing);
+        }
+    }
+
+   .container__images--grid{
+    display:flex;
+    flex-direction:column;
+    gap:var(--space-9);
+   }
+}
+
+
+   .container__info--grid{
+     background-color:var(--grey-900);
+     display:flex;
+     flex-direction:column;
+     gap:var(--space-9);
+      padding:var(--space-11) var(--space-7);
+        .info__titljje--grid{
+            font:var(--font-3);
+            letter-spacing: var(--font-3-letter-spacing);
+            color:var(--white);
+            text-transform:uppercase;
+            
+        }
+       
+    
+
+
+     .description__info--grid{
+            font:var(--font-7);
+            letter-spacing: var(--font-7-letter-spacing);
+            color:var(--white);
+           
+           
+
+        }
+
+    }
+
+
+// ======================================================================
+// ========================FOOTER==============================
+
+.footer{
+    background-color:var(--grey-900);
+    display:flex;
+    flex-direction:column;
+    gap:var(--space-9);
+     padding:var(--space-11) var(--space-7);
+        .footer__title{
+            font:var(--font-3);
+            letter-spacing: var(--font-3-letter-spacing);
+            color:var(--white);
+            text-transform:uppercase;
+            
+        }
+
+
+        .footer__container--icons{
+            display:flex;
+            flex-direction:row;
+            gap:var(--space-7);
+        }
 }
