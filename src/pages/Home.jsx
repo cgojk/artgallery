@@ -1,5 +1,6 @@
 import React from "react";
 import Hero from "../components/Hero";
+import Info from "../components/Info";
 
 
 
@@ -9,6 +10,7 @@ import Hero from "../components/Hero";
   return (
    <section className="home ">
     <Hero />
+    <Info />
    
 
     
