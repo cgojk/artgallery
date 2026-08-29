@@ -1,7 +1,40 @@
-.container{
-    max-width:1200px;
-    margin:0 auto;
+// * =========================== GENERAL ============================ */
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
 }
+
+body {
+  font: var(--font-10-regular);
+  color: var(--neutral-0);
+  background-color: var(--navy-950);
+  overflow-x: hidden;
+  overflow-y: auto;
+  background-image: url('../assets/background-stars.svg');
+  background-repeat: no-repeat;
+}
+
+.layout {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  padding:var(--space-5) 0;
+}
+
+.main-content {
+  flex: 1;
+
+
+ 
+}
+
+
+
+// =======================================================================
+// =======================HERO SECTION==============================
+
+
 
 .hero{
     background-color:var(--white);
@@ -127,10 +160,13 @@
 
 .footer{
     background-color:var(--grey-900);
+
+    .footer__container{
     display:flex;
     flex-direction:column;
     gap:var(--space-9);
      padding:var(--space-11) var(--space-7);
+
         .footer__title{
             font:var(--font-3);
             letter-spacing: var(--font-3-letter-spacing);
@@ -138,11 +174,20 @@
             text-transform:uppercase;
             
         }
-
-
-        .footer__container--icons{
+        .footer__text{
+            font:var(--font-7);
+            letter-spacing: var(--font-7-letter-spacing);
+            color:var(--white);
+        }
+         .footer__container--icons{
             display:flex;
             flex-direction:row;
             gap:var(--space-7);
         }
+
+
+       
+}
+
+
 }
