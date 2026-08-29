@@ -28,7 +28,7 @@ export default function Info() {
     <section className="info container">
       <div className="container__image--info">
         <div className="image__container">
-            <picture>
+            <picture className="image__info">
               <source
                 media="(min-width: 1024px)"
                 srcSet={`${infoImageDesktop1} 1x, ${infoImageDesktop1_2x} 2x`}
