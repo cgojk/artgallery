@@ -8,13 +8,14 @@ import heroImageTablet2x from "../assets/tablet/image-hero@2x.jpg";
 import heroImageDesktop from "../assets/desktop/image-hero.jpg";
 import heroImageDesktop2x from "../assets/desktop/image-hero2x.jpg";
 import iconarrow from "../assets/icon-arrow-right.svg";
-// import artworkImages from "../ArtworkImages";
+
 import { Link } from "react-router-dom";
 
 
 export default function Hero() {
 return (
 <section className="hero container">
+   <div className="hero__black"></div>
       <div className="container__image">
         <picture>
             <source
@@ -36,7 +37,10 @@ return (
         </picture>
       </div>
       <div className="container__info">
+        <div className="title__container--info">
           <h1 className="hero__title"> Modern art gallery</h1>
+          </div>
+          <div className="info-button">
             <p className="hero__description">
                 The arts in the collection of the Modern Art Gallery all started from a spark of inspiration.  Will these pieces inspire you? visit us and find out.
             </p>
@@ -50,6 +54,7 @@ return (
             />
             </span>
        </Link>
+    </div>
  </div>
 </section>
   );
