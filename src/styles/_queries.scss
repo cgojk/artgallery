@@ -29,19 +29,16 @@ grid-template-columns: repeat(12, minmax(0, 1fr));
         }
     }
     .container__info{
-        grid-column: 5/13;
+        grid-column: 6/13;
         grid-row: 1;
         z-index:1;
         gap:var(--space-11);
        align-content:center;
        display:grid;
-       width:450px;
+     width: min(400px, 100%);
         
 
-        .hero__title{
-            font:var(--font-1);
-            
-        }
+        
         .info-button{
             display:flex;
              flex-direction:column;
@@ -91,18 +88,31 @@ grid-template-columns: repeat(12, minmax(0, 1fr));
 // ===============================
 
 
+
+
+
 @media only screen and (min-width: 1200px) {
 .hero {
     display: grid;
+    position:relative;
+    max-width: 1200px;
+  
+    margin-inline: auto;
     width:100%;
-    min-width:100%;
+    // min-width:100%;
     grid-template-columns: repeat(12, minmax(0, 1fr));
     align-items: stretch;
   
 
   // BLACK LEFT SECTION
   .hero__black {
-    grid-column: 1 / 5;
+    z-index:0;
+    top:0;
+    bottom:0;
+    left:calc((1200px - 100vw)/2);
+    width:calc(50% + (100vw - 1200px)/2);
+    position:absolute;
+    // grid-column: 1 / 5;
     grid-row: 1;
     background: #151515;
   }
@@ -134,8 +144,39 @@ grid-template-columns: repeat(12, minmax(0, 1fr));
     display: flex;
     flex-direction: column;
     justify-content: center;
+      width: min(400px, 100%);
 
     padding-left: var(--space-8);
+    .title__container--info{
+        position:absolute;
+        z-index:3;
+        left:8.333%;
+        top:30%;
+
+    .logo__light{
+            display:block;
+            width: 100%;
+            height: clamp(108px, 10vw, 172px);
+             max-width: 450px;
+             position:relative;
+             inset:0;
+        }
+        .logo__dark{
+            display:block;
+            position:absolute;
+            left:0;
+             width: 100%;
+             height: clamp(108px, 10vw, 172px);
+             max-width: 450px;
+             clip-path: inset(0 0 0 60%);
+             inset:0;
+        }
   }
 }
 }
+}
+
+
+
+
+

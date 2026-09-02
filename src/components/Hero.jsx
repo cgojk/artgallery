@@ -8,6 +8,8 @@ import heroImageTablet2x from "../assets/tablet/image-hero@2x.jpg";
 import heroImageDesktop from "../assets/desktop/image-hero.jpg";
 import heroImageDesktop2x from "../assets/desktop/image-hero2x.jpg";
 import iconarrow from "../assets/icon-arrow-right.svg";
+import logolight from "../assets/logo-light.svg";
+import logoDark from "../assets/logo-dark.svg";
 
 import { Link } from "react-router-dom";
 
@@ -38,7 +40,10 @@ return (
       </div>
       <div className="container__info">
         <div className="title__container--info">
-          <h1 className="hero__title"> Modern art gallery</h1>
+          <img src={logolight} alt="Logo Light" className="logo__light" />
+          <div className="logo__dark--wrapper">
+          <img src={logoDark} alt="Logo Dark" className="logo__dark" />
+       </div>
           </div>
           <div className="info-button">
             <p className="hero__description">

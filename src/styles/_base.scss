@@ -60,13 +60,17 @@ body {
        gap:var(--space-9);
         
       padding:var(--space-9) var(--space-5);
+    .title__container--info{
+       
+    .logo__light{
+      
+       display:none;
     }
-    .hero__title{
-        font:var(--font-3);
-        letter-spacing: var(--font-3-letter-spacing);
-        color:var(--grey-900);
-        text-transform:uppercase;
+    .logo__dark{
+        display:block;
+        height: clamp(108px, 10vw, 172px);
     }
+}
     .hero__description{
         font:var(--font-7);
         letter-spacing: var(--font-7-letter-spacing);
@@ -98,6 +102,7 @@ body {
 
 
     }
+}
 
     
 
