@@ -52,7 +52,7 @@ export default function Info() {
           </div>
         </div>
         <div className="container__images--grid">
-            <picture>
+            <picture className="image__info--large">
               <source
                 media="(min-width: 1024px)"
                 srcSet={`${infoImageDesktop2} 1x, ${infoImageDesktop2_2x} 2x`}
@@ -67,7 +67,7 @@ export default function Info() {
                 alt="Info Image"
               />
             </picture>
-            <picture>
+            <picture className="image__info--small">
               <source
                 media="(min-width: 1024px)"
                 srcSet={`${infoImageDesktop3} 1x, ${infoImageDesktop3_2x} 2x`}
