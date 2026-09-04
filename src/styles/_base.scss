@@ -90,14 +90,17 @@ body {
         .hero__button-line{
             background-color: var(--gold-500);;
              padding:var(--space-7) var(--space-8);
+              margin-top:var(--space-5);
         }
         .hero__button{
             background-color:var(--grey-900);
              padding:var(--space-7) var(--space-8);
             color:var(--white);
+              margin-top:var(--space-5);
         }
         .hero__button-icon{
            display:block;
+         
         }
 
 
@@ -113,8 +116,9 @@ body {
 // ===================INFO SECTION==========================
 
 .info{
-      
-
+    
+  .container__image--info{
+    padding:var(--space-9) var(--space-5);
             .image__container{
                 overflow:hidden;
                 width: 100%;
@@ -154,11 +158,12 @@ body {
             letter-spacing: var(--font-7-letter-spacing);
         }
     }
-
+}
    .container__images--grid{
     display:flex;
     flex-direction:column;
     gap:var(--space-9);
+      padding:var(--space-9) var(--space-5);
 
     picture{
         overflow:hidden;
