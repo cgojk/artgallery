@@ -10,6 +10,7 @@ import heroImageDesktop2x from "../assets/desktop/image-hero2x.jpg";
 import iconarrow from "../assets/icon-arrow-right.svg";
 import logolight from "../assets/logo-light.svg";
 import logoDark from "../assets/logo-dark.svg";
+import ArrowButton from "./UI/ArrowButton";
 
 import { Link } from "react-router-dom";
 
@@ -41,24 +42,16 @@ return (
       <div className="container__info">
         <div className="title__container--info">
           <img src={logolight} alt="Logo Light" className="logo__light" />
-          <div className="logo__dark--wrapper">
           <img src={logoDark} alt="Logo Dark" className="logo__dark" />
-       </div>
+       
           </div>
           <div className="info-button">
             <p className="hero__description">
                 The arts in the collection of the Modern Art Gallery all started from a spark of inspiration.  Will these pieces inspire you? visit us and find out.
             </p>
-          <Link to="/location" className="button__container">
-              <span className="hero__button">Our Location</span>
-              <span className="hero__button-line">
-            <img
-              className="hero__button-icon"
-              src={iconarrow}
-              alt="Arrow Icon"
-            />
-            </span>
-       </Link>
+            <ArrowButton to="/location">
+                Our Location
+            </ArrowButton>
     </div>
  </div>
 </section>

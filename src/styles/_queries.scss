@@ -11,8 +11,8 @@
 
     .hero{
       display:grid;
-     min-height: 90svh;
-     height:90svh;
+     min-height: 85svh;
+    //  height:85svh;
     
      grid-template-columns: repeat(12, minmax(0, 1fr));
 
@@ -67,6 +67,7 @@
         display:grid;
         grid-template-columns: 1fr 100px 1fr;
         gap:var(--space-5);
+       
        
       
        
@@ -147,6 +148,21 @@
     }
 }
 }
+
+// ============================================
+// footer===========================================
+.footer{
+.footer__container{
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    
+    .footer__container--icons{
+        
+        justify-content: flex-end;
+        
+    }
+}
+}
 }
 
 
@@ -164,6 +180,8 @@
     display: grid;
     position:relative;
     max-width: 1200px;
+    min-height: 90svh;
+    //  height:90svh;
   
     margin-inline: auto;
     width:100%;
