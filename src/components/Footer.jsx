@@ -10,7 +10,7 @@ import twitterIcon from "../assets/icon-twitter.svg";
 export default function Footer( {variant = "home"} ) {
   return (
     <footer className={`footer footer--${variant}`}> 
-        <div className="footer__container container">
+        <div className="footer__container ">
            
                 <div className="title__wraper">
                     <h1 className="footer__title">Modern 
