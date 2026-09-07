@@ -7,12 +7,12 @@ import heroImageTablet2x from "../assets/tablet/image-hero@2x.jpg";
 
 import heroImageDesktop from "../assets/desktop/image-hero.jpg";
 import heroImageDesktop2x from "../assets/desktop/image-hero2x.jpg";
-import iconarrow from "../assets/icon-arrow-right.svg";
+
 import logolight from "../assets/logo-light.svg";
 import logoDark from "../assets/logo-dark.svg";
 import ArrowButton from "./UI/ArrowButton";
 
-import { Link } from "react-router-dom";
+
 
 
 export default function Hero() {

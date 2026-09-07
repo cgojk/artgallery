@@ -1,10 +1,15 @@
 import React from "react"
-import { Outlet } from "react-router-dom"
+import { Outlet, useLocation } from "react-router-dom"
 
  import Footer from "./Footer"
 
 
 export default function Layout() {
+  const location = useLocation();
+
+  const footerVariant =
+    location.pathname === "/location" ? "location" : "home";
+
     return (
        
     <div className="layout">
@@ -13,7 +18,7 @@ export default function Layout() {
         <Outlet />
       </main>
 
-       <Footer /> 
+       <Footer variant={footerVariant}/> 
     </div>
 
     )
