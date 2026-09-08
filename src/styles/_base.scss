@@ -83,36 +83,52 @@ body {
 
 }
 
-.button__container{
-        font:var(--font-6);
-        letter-spacing: var(--font-6-letter-spacing);
-        color:var(--white);
-        text-transform:uppercase;
-       border: none;
-        cursor: pointer;
-        display: flex;
-        
-    
-        flex-direction: row;
+.button__container {
+    font: var(--font-6);
+    letter-spacing: var(--font-6-letter-spacing);
+    color: var(--white);
+    text-transform: uppercase;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    flex-direction: row;
 
-        .hero__button-line{
-            background-color: var(--gold-500);;
-             padding:var(--space-7) var(--space-8);
-              margin-top:var(--space-5);
-        }
-        .hero__button{
-            background-color:var(--grey-900);
-             padding:var(--space-7) var(--space-8);
-            color:var(--white);
-              margin-top:var(--space-5);
-        }
-        .hero__button-icon{
-           display:block;
-         
-        }
+    .hero__button-line {
+        background-color: var(--gold-500);
+        padding: var(--space-7) var(--space-8);
+        margin-top: var(--space-5);
+        transition: background-color 0.3s ease;
 
-
+        &:hover {
+            background-color: var(--grey-900);
+            color: var(--gold-500);
+        }
     }
+
+    .hero__button {
+        background-color: var(--grey-900);
+        padding: var(--space-7) var(--space-8);
+        color: var(--white);
+        margin-top: var(--space-5);
+
+     
+        transition: background-color 0.3s ease, color 0.3s ease;
+
+        &:hover {
+            background-color: var(--gold-500);
+            color: var(--grey-900);
+
+            .hero__button-icon {
+                transform: translateX(5px);
+            }
+        }
+    }
+
+    .hero__button-icon {
+        display: block;
+        transition: transform 0.3s ease;
+    }
+}
 
 // =========================================================
 
