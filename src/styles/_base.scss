@@ -294,7 +294,6 @@ body {
             gap:var(--space-7);
         }
 
-
        
 }
 
@@ -302,8 +301,29 @@ body {
 }
 .footer--location {
   background-color: var(--gold-500);
- 
+      .footer__container{
+            .footer__title{
+          color:var(--grey-900);
+       span{
+           color:var(--grey-900);
+            }
+      }
+        .footer__text{
+     color:var(--grey-900);
+        }
+         
+
+       
 }
+
+.footer__icon img{
+    filter:brightness(0);
+}
+
+
+}
+
+
 
 // ==========================================================
 // location styles=================================
@@ -311,12 +331,7 @@ body {
  width: 100%;
 background-color:var(--grey-900);
 
-.footer__text,
-.footer__title,
-.footer__title span
-{
-    color:var(--grey-900);
-}
+
 
  
 
