@@ -40,7 +40,7 @@ export default function Info() {
               <img
                 src={infoImageMobile1}
                 srcSet={`${infoImageMobile1} 1x, ${infoImageMobile1_2x} 2x`}
-                alt="Info Image"
+                alt=""
               />
             </picture>
           </div>

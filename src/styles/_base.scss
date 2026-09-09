@@ -1,5 +1,18 @@
 // * =========================== GENERAL ============================ */
 
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+
 .container {
   max-width: 1200px;
   margin: 0 auto;
@@ -83,6 +96,10 @@ body {
 
 }
 
+
+
+
+
 .button__container {
     font: var(--font-6);
     letter-spacing: var(--font-6-letter-spacing);
@@ -98,11 +115,6 @@ body {
         padding: var(--space-7) var(--space-8);
         margin-top: var(--space-5);
         transition: background-color 0.3s ease;
-
-        &:hover {
-            background-color: var(--grey-900);
-            color: var(--gold-500);
-        }
     }
 
     .hero__button {
@@ -110,23 +122,29 @@ body {
         padding: var(--space-7) var(--space-8);
         color: var(--white);
         margin-top: var(--space-5);
-
-     
         transition: background-color 0.3s ease, color 0.3s ease;
-
-        &:hover {
-            background-color: var(--gold-500);
-            color: var(--grey-900);
-
-            .hero__button-icon {
-                transform: translateX(5px);
-            }
-        }
     }
 
     .hero__button-icon {
         display: block;
         transition: transform 0.3s ease;
+    }
+
+    // Hover over the WHOLE button
+    &:hover,
+    &:focus-visible {
+        .hero__button {
+            background-color: var(--gold-500);
+            color: var(--grey-900);
+        }
+
+        .hero__button-line {
+            background-color: var(--grey-900);
+        }
+
+        .hero__button-icon {
+            transform: translateX(5px);
+        }
     }
 }
 
@@ -292,6 +310,13 @@ body {
 .location{
  width: 100%;
 background-color:var(--grey-900);
+
+.footer__text,
+.footer__title,
+.footer__title span
+{
+    color:var(--grey-900);
+}
 
  
 

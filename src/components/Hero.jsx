@@ -25,24 +25,27 @@ return (
               media="(min-width: 1024px)"
 
               srcSet={`${heroImageDesktop} 1x, ${heroImageDesktop2x} 2x`}
+              alt=""
             />
 
             <source
               media="(min-width: 768px)"
               srcSet={`${heroImageTablet} 1x, ${heroImageTablet2x} 2x`}
+              alt=""
             />
 
             <img
               src={heroImagemobile}
               srcSet={`${heroImagemobile} 1x, ${heroImagemobile2x} 2x`}
-              alt="Hero Image"
+              alt=""
             />
         </picture>
       </div>
       <div className="container__info">
         <div className="title__container--info">
-          <img src={logolight} alt="Logo Light" className="logo__light" />
-          <img src={logoDark} alt="Logo Dark" className="logo__dark" />
+           <h1 className="visually-hidden">Modern Art Gallery</h1>
+          <img src={logolight} alt="" className="logo__light" />
+          <img src={logoDark} alt="" className="logo__dark" />
        
           </div>
           <div className="info-button">
