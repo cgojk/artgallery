@@ -292,13 +292,22 @@ body {
             display:flex;
             flex-direction:row;
             gap:var(--space-7);
-        }
 
+            .footer__icon{
+                cursor:pointer;
+                &:hover{
+                    opacity:0.5;
+                }
+            
+            
+        }
+        }
+    }
        
 }
 
 
-}
+
 .footer--location {
   background-color: var(--gold-500);
       .footer__container{
